@@ -1,0 +1,55 @@
+<html>
+
+<head>
+  <title>Ancestor Traversal Method</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#b1").click(function () {
+        $("span").parent().css({"color":"blue", "border": "4px solid blue"});
+      });
+
+      $("#b2").click(function () {
+        $("span").parents().css({"color":"red", "border": "4px solid blue"});
+      });
+
+      $("#b3").click(function () {
+        $("span").parentsUntil("div").css({"color":"pink", "border": "4px solid blue"});
+      });
+    });
+  </script>
+
+  <style>
+    li {
+      display: block;
+    }
+    .outermost * { 
+      display: block;
+      border: 1px solid lightgrey;
+      color: green;
+      padding: 6px;
+      margin: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="outermost">
+    <div style="width:400px;">Great-grandparent (div)
+      <ul style="list-style-type: none;">Grandparent (ul)
+        <li>Parent (li)
+          <span>Child (span)</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <button id="b1">parent()</button>
+  <button id="b2">parents()</button>
+  <button id="b3">parentsUntil()</button>
+
+</body>
+
+</html>

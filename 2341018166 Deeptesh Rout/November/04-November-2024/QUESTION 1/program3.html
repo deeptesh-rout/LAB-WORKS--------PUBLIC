@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("button").click(function() {
+        $("h1, p").toggleClass("green");
+      });
+    });
+  </script>
+  <style>
+    .green {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1>This is the first heading which is soon to be turned green!</h1>
+  <h2>This is the second heading which is going to remain the same!</h2>
+  <p>This is the first paragraph which is soon to be turned green.</p>
+  <p>This is the second paragraph which is soon to be turned green.</p>
+  <button>Use the toggleClass function</button>
+</body>
+</html>

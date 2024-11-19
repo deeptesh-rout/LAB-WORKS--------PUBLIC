@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <script>
+    $(document).ready(function(){
+
+
+        $("#b1").click(function(){
+            $("h1").hide(1000);
+        });
+        
+        $("#b2").dblclick(function(){
+            $("h2").hide(2000);
+        });
+
+         
+        $("h3").mouseenter(function(){
+            alert("Enter mouse on me ");
+        });
+
+       
+	 $("h4").mouseleave(function(){
+            alert("Enter left");
+        });
+
+
+    });
+    </script>
+</head>
+
+
+
+
+<body>
+
+
+    <h1>Single Click Disappear</h1>
+    <button id="b1">Click me once</button>
+
+    <h2>Double Click Disappear</h2>
+    <button id="b2">Click me twice</button>
+
+
+    <h3>Double Click Disappear</h3>
+
+
+   <h4>Double Click Disappear</h4>
+
+
+
+
+</body>
+</html>

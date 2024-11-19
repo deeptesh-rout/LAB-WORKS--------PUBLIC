@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <title>Adding HTML Elements</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                $("#d").remove();
+            });
+
+            $("#b2").click(function(){
+                $("p.b").remove(); 
+            });
+
+            $("#b3").click(function(){
+                $("#d1").empty();
+            });
+        });
+    </script>
+
+    <style>
+       .a, .b {
+            color: dodgerblue;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="d" style="height:200px;width:200px;border:3px solid green;background-color:orange;">
+        This is a removalble using remove() method 
+    </div>
+    <br>  <br>
+    <button id="b1">Delete the entire box</button>
+
+    <p class="a">This is the first paragraph.</p>
+    <p class="b">This is the second paragraph.</p>
+    <p class="b">This is the third paragraph.</p>
+
+  <br>  <br>
+
+    <button id="b2">Remove the paragraph with class = "b"</button>
+
+  <br>  <br>
+
+    <div id="d1" style="height:200px;width:200px;border:3px solid green;background-color:orange;">
+       This box will retain , but it contents will be emptied using empty()
+        
+    </div>
+
+  <br>  <br> 
+
+    <button id="b3">Empty the contents in the box</button>
+
+</body>
+</html>

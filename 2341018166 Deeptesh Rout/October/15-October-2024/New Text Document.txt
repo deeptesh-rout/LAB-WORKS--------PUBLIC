@@ -1,0 +1,146 @@
+Home Work-1
+
+Strictly follow the following codes for your answer.
+
+
+<html>
+<head>
+    <title>CSS Concepts Homework</title>
+    <style>
+        /* Section with background color */
+        .cl1 {
+            background-color: #f0f8ff;
+        }
+        /* Section with background image horizontal repeat */
+        .cl2 {
+            background-image: url(" ... ");
+	    background-repeat: repeat-x;
+	    height: 200 px;
+	    weight: 800 px;
+        }
+        /* Section with same background image vertical repeat*/
+        .cl3 {
+            background-image: url(" ... ");
+	    background-repeat: repeat-y;
+	    height: 800 px;
+	    weight: 200 px;
+        }
+        /* Section demonstrating the Box Model */
+        .cl4 {
+            width: 80%;
+	    height: 200 px;
+            border: 2px solid #4682b4;
+            padding: 20px;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Section with background color -->
+    <div class="cl1">
+        <h1>My Name is ... </h1>
+        <p>I am a student at ...</p>
+    </div>
+    <!-- Section with background image (horizontal repeat) -->
+    <div class="cl2">
+        <h1>My Regn. no. is ...</h1>
+        <p>I am from .... district </p>
+    </div>
+    <!-- Section with background image (vertical repeat) -->
+    <div class="cl3">
+        <h1>My Regn. no. is ...</h1>
+        <p>I am from .... state </p>
+    </div>
+    <!-- Section for demonstrating the Box Model -->
+    <div class="cl4">
+        <p>It's Awesome to use the Box Model!</p>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home Work-2
+
+Strictly follow the following codes for your answer.
+
+<html>
+<head>
+    <title>CSS Concepts Homework</title>
+    <style>
+	p {
+		border: 5px solid yellow;
+		outline-offset: 3px;
+		outline-width: 5px;
+	}
+	.cl1 {	outline: dotted blue;	}
+	.cl2 {	outline: dashed black;	}
+	.cl3 {	outline: solid pink;	}
+	.cl4 {	outline: double red;	}
+	.cl5 {	outline: groove purple;	}
+	.cl6 {	outline: ridge magenta;	}
+	.cl7 {	outline: inset maroon;	}
+	.cl8 {	outline: outset violet;	}
+	.cl9 {	outline: none orange;	}
+	.cl10 {	outline: hidden green;	}
+    </style>
+</head>
+<body>
+	<p class="cl1"> Paragraph-1 (Replace with Your Name)
+	<p class="cl2"> Paragraph-2 (Replace with Your Close Friend-1 Name)
+	<p class="cl3"> Paragraph-3 (Replace with Your Close Friend-2 Name)
+	<p class="cl4"> Paragraph-4 (Replace with Your Close Friend-3 Name)
+	<p class="cl5"> Paragraph-5 (Replace with Your Close Friend-4 Name)
+	<p class="cl6"> Paragraph-6 (Replace with Your Close Friend-5 Name)
+	<p class="cl7"> Paragraph-7 (Replace with Your Close Friend-6 Name)
+	<p class="cl8"> Paragraph-8 (Replace with Your Close Friend-7 Name)
+	<p class="cl9"> Paragraph-9 (Replace with Your Close Friend-8 Name)
+	<p class="cl10"> Paragraph-10 (Replace with Your Close Friend-9 Name)
+	</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

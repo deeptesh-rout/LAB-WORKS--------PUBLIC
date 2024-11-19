@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#b1").click(function(){
+        alert("Text: " + $("#par").text());
+      });
+      $("#b2").click(function(){
+        alert("HTML: " + $("#par").html());
+      });
+    });
+  </script>
+</head>
+<body>
+  <p id="par">This line is part of a paragraph <b>and contains bold text.</b></p>
+  <button id="b1">Display Text</button>
+  <button id="b2">Display HTML code</button>
+</body>
+</html>

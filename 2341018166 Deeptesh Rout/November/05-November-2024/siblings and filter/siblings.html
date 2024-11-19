@@ -1,0 +1,28 @@
+<html>
+<head>
+<style>
+.s * { 
+  display: block;
+  border: 3px solid yellow;
+  color: orange;
+  padding: 6px;
+  margin: 18px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  $("h2").siblings().css({"color": "blue", "border": "3px solid blue"});
+});
+</script>
+</head>
+<body class="s">
+  <div>div (parent)
+    <p>p</p>
+    <span>span</span>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <p>p</p>
+  </div>
+</body>
+</html>

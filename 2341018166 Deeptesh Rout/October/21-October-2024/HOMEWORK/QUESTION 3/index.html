@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hover Interaction with CSS</title>
+    <style>
+        #special-div {
+            font-size: 20px;
+            color: black;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            display: block;
+            margin-top: 20px;
+        }
+        img:hover ~ #special-div {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="bird.jpg" alt="Hover over this image" id="hover-image">
+    <div id="special-div">My Special Div</div>
+
+</body>
+</html>

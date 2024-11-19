@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Set Attributes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                $("#par1").text("Hi Students");
+            });
+            $("#b2").click(function(){
+                $("#par2").html("<b>Hi Students</b>");
+            });
+            $("#b3").click(function(){
+                $("#par3").val("Mayur Ramgir");
+            });
+            $("#b4").click(function(){
+                $("#go").attr("href", "https://www.soa.ac.in/iter");
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <p id="par1">This is Front End.</p>
+    <p id="par2">This is our Back End.</p>
+    <p>Input field: <input type="text" id="par3" value="Rick"></p>
+    
+    <button id="b1">Set Text Content</button>
+    <button id="b2">Set HTML Content</button>
+    <button id="b3">Set Input Value</button>
+
+    <p><a href="https://www.google.com" id="go">google.com</a></p>
+    <button id="b4">Change Link URL</button>
+
+    <p>Click the above button, then hover and click the link to see the new URL</p>
+
+</body>
+</html>

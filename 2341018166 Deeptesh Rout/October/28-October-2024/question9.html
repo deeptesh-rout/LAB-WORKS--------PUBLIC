@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Callback in jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#callbackbtn").click(function(){
+                $("h2").hide(3000, function(){
+                    alert("Heading Disappeared");  
+                });
+            });
+
+            $("#chainbtn").click(function(){
+                $(".h").css("color", "blue").slideUp(2000).slideDown(2000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>Callback Function Example</h2>
+    <button id="callbackbtn">Callback Button</button>
+    <h1 class="h">Chaining Function Example Line-1</h1>
+    <h1 class="h">Chaining Function Example Line-2</h1>
+    <button id="chainbtn">Chaining Button</button>
+</body>
+</html>

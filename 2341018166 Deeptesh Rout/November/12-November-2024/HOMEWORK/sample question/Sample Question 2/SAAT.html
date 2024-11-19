@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration for SAAT-2024</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            text-align: center;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2a3d63;
+        }
+        label {
+            font-size: 16px;
+            margin-top: 10px;
+            display: block;
+            text-align: left;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="number"], select {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button[type="reset"] {
+            background-color: #f44336;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        img {
+            width: 150px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <h1>Student Registration for SAAT-2024</h1>
+        <img src="Siksha_‘O’_Anusandhan.png" alt="SOA University Logo">
+        
+        
+        <form action="#" method="POST">
+            
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="middleName">Middle Name:</label>
+            <input type="text" id="middleName" name="middleName">
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+           
+            <label for="fatherName">Father's Name:</label>
+            <input type="text" id="fatherName" name="fatherName" required>
+
+            
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="number" id="phoneNumber" name="phoneNumber" required>
+
+           
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required>
+
+            
+            <label for="tenthPercentage">10th Percentage:</label>
+            <input type="number" id="tenthPercentage" name="tenthPercentage" required>
+
+            <label for="twelfthPercentage">12th Percentage:</label>
+            <input type="number" id="twelfthPercentage" name="twelfthPercentage" required>
+
+            
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            
+            <label for="examCenter">Select Examination Center:</label>
+            <select id="examCenter" name="examCenter" required>
+                <option value="Balasore">Balasore</option>
+                <option value="Rourkela">Rourkela</option>
+                <option value="Sambalpur">Sambalpur</option>
+                <option value="Berhampur">Berhampur</option>
+                <option value="Rayagada">Rayagada</option>
+                <option value="Paralakhemundi">Paralakhemundi</option>
+                <option value="Bhawanipatana">Bhawanipatana</option>
+                <option value="Puri">Puri</option>
+                <option value="Cuttack">Cuttack</option>
+                <option value="Bhubaneswar">Bhubaneswar</option>
+            </select>
+
+            <button type="submit">SUBMIT</button>
+            <button type="reset">RESET</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("button").click(function() {
+        alert("Background color = " + $("#p1").css("background-color"));
+        alert("Background color = " + $("#p2").css("background-color"));
+        alert("Background color = " + $("#p3").css("background-color"));
+      });
+    });
+  </script>
+</head>
+<body>
+  <h2>This is a heading</h2>
+  <p id="p1" style="background-color:dodgerblue">This is the first paragraph.</p>
+  <p id="p2" style="background-color:orange">This is the second paragraph.</p>
+  <p id="p3" style="background-color:yellow">This is the third paragraph.</p>
+  <button>Show the background color of each paragraph.</button>
+</body>
+</html>

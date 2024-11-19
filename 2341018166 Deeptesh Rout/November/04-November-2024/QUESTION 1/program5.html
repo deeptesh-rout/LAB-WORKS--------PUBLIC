@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("button").click(function() {
+        $("#p1").css("background-color", "red");
+        $("#p2").css("background-color", "blue");
+        $("#p3").css("background-color", "green");
+      });
+    });
+  </script>
+</head>
+<body>
+  <h2>How to set a CSS property?</h2>
+  <p id="p1" style="background-color:dodgerblue">This is the first paragraph.</p>
+  <p id="p2" style="background-color:orange">This is the second paragraph.</p>
+  <p id="p3" style="background-color:yellow">This is the third paragraph.</p>
+  <p>This paragraph is without any color.</p>
+  <button>Adjust the background color of the paragraphs.</button>
+</body>
+</html>

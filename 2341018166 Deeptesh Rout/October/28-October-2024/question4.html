@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Effects in jquery </title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <script>
+    $(document).ready(function(){
+
+
+        $("#b1").click(function(){
+            $("h1").hide(1000);
+        });
+        
+        $("#b2").click(function(){
+            $("h1").show(2000);
+        });
+
+         
+        $("#b3").click(function(){
+           $("h1").toggle(3000);
+        });
+
+  
+
+
+    });
+    </script>
+</head>
+
+
+
+
+<body>
+
+
+    <h1>Hide Show and toggle</h1>
+    <button id="b1">Hide</button>
+    <button id="b2">Show</button>
+   <button id="b3">Toggle</button>
+
+
+
+</body>
+</html>

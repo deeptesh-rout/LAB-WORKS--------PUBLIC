@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery with CSS</title> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#b1").click(function() {
+        $("h1, p").addClass("green");
+        $("div").addClass("size");
+      });
+    });
+  </script>
+  <style>
+    .size {
+      font-size: xx-small;
+    }
+    .green {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Heading 1 in red</h1>
+  <h2>heading 2</h2>
+  <p>Pargraph 1 with red</p>
+  <p>Paragraph2 with red </p>
+  <div>Hi i am inside div elemnts</div><br>
+  <button id="b1">Add "red " color and ""size "  class</button>
+</body>
+</html>

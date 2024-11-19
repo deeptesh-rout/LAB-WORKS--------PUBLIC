@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>Filtering Traversal Methods</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#b1").click(function () {
+                $("div").first().css({"background-color":"lightgreen"});
+            });
+
+            $("#b2").click(function () {
+                $("div").last().css({"background-color":"lightgray"});
+            });
+
+            $("#b3").click(function () {
+                $("div").eq(2).css({"background-color":"orange"});
+            });
+
+        });
+    </script>
+    <style>
+        div {
+            border: 2px solid blue;
+            margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>jQuery Filtering Traversal Examples</h1>
+    <p>This example demonstrates the use of filtering methods like <code>first()</code> <code>last()</code> <code>eq()</code> in jQuery.</p>
+    <div>
+        <p>This is the First Paragraph in First Div</p>
+        <p>This is the Second Paragraph in First Div</p>
+    </div>
+
+    <div>
+        <p>This is the First Paragraph in Second Div</p>
+        <p>This is the Second Paragraph in Second Div</p>
+    </div>
+
+    <div>
+        <p>This is the First Paragraph in Third Div</p>
+        <p>This is the Second Paragraph in Third Div</p>
+    </div>
+
+    <div>
+        <p>This is the First Paragraph in Fourth Div</p>
+        <p>This is the Second Paragraph in Fourth Div</p>
+    </div>
+
+    <button id="b1">Highlight First Div (first())</button>
+    <button id="b2">Highlight Last Div (last())</button>
+    <button id="b3">Highlight Third Div (eq())</button>
+</body>
+
+</html>

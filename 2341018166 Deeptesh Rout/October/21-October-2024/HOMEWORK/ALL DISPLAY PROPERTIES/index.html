@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Properties</title>
+    <style>
+        .block {
+            display: block;
+            background-color: lightblue;
+            margin: 10px;
+            padding: 10px;
+        }
+        .inline {
+            display: inline;
+            background-color: lightgreen;
+            margin: 5px;
+            padding: 5px;
+        }
+        .inline-block {
+            display: inline-block;
+            background-color: lightcoral;
+            margin: 5px;
+            padding: 5px;
+        }
+        .flex {
+            display: flex;
+            background-color: lightyellow;
+            margin: 10px;
+            padding: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            background-color: lightgray;
+            margin: 10px;
+            padding: 10px;
+        }
+        .none {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">Block Element</div>
+    <span class="inline">Inline Element</span>
+    <span class="inline">Another Inline Element</span>
+    <div class="inline-block">Inline Block Element</div>
+    <div class="flex">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+    <div class="grid">
+        <div>Grid Item 1</div>
+        <div>Grid Item 2</div>
+        <div>Grid Item 3</div>
+    </div>
+</body>
+</html>

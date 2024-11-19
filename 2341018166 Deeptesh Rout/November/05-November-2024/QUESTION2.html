@@ -1,0 +1,147 @@
+<html>
+<head>
+<title> jQuery in CSS </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    $(document).ready(function(){
+      $("#b1").click(function(){
+        $("h2").siblings().css({"color":"blue", "border":"2px solid blue"});
+      });
+      $("#b2").click(function(){
+        $("h2").next().css({"color":"red", "border":"2px solid red"});
+      });
+      $("#b3").click(function(){
+        $("h2").nextAll().css({"color":"orange", "border":"2px solid orange"});
+      });
+      $("#b4").click(function(){
+        $("h2").nextUntil("h5").css({"color":"yellow", "border":"2px solid yellow"});
+      });
+      $("#b5").click(function(){
+        $("h2").prev().css({"color":"green", "border":"2px solid green"});
+      });
+      $("#b6").click(function(){
+        $("h2").prevAll().css({"color":"purple", "border":"2px solid purple"});
+      });
+      $("#b7").click(function(){
+        $("h2").prevUntil("p").css({"color":"violet", "border":"2px solid violet"});
+      });
+
+
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+
+
+.class1 *{
+         display: block;
+         border: 2px solid gray;
+         color: black;
+         padding: 6px;
+         margin: 15px;
+        }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+<div class="class1"> My Parents (div) 
+   <p> Third Older Brother(p) </p>
+   <span> Second Older Brother(span) </span>
+   <h1> Immediate Older Brother(h1) </h1>
+   <h2> I am here(h2) </h2>
+   <h3> Immediate Younger Sister(h3) </h3>
+   <h4> Second Younger Sister(h4) </h4>
+   <h5> Third Younger Sister(h5) </h5>
+   <h6> Fourth Younger Sister(h6) </h6>
+</div>
+
+
+
+
+
+
+
+
+
+<button id="b1"> Apply siblings() Methods </button>
+<button id="b2"> Apply next() Methods </button>
+<button id="b3"> Apply nextAll() Methods </button>
+<button id="b4"> Apply nextUntil() Methods </button>
+<button id="b5"> Apply prev() Methods </button>
+<button id="b6"> Apply prevAll() Methods </button>
+<button id="b7"> Apply prevUntil() Methods </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

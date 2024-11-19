@@ -1,0 +1,441 @@
+<html>
+<head>
+<title>Responsiveness in CSS</title>
+<style>
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(odd) { background-color: green; }
+tr:nth-child(even) { background-color: pink; }
+</style>
+</head>
+<body>
+<h2>Responsiveness in CSS</h2>
+<p>When the screen becomes small, this table can resize according to and even add a scrollbar
+so users can read the complete information.</p>
+<div style="overflow-x:auto;">
+<table>
+<tr>
+    <th>Student Name</th>
+    <th>Roll Number</th>
+    <th>Marks</th>
+    <th>Marks</th>
+    <th>Marks</th>
+    <th>Marks</th>
+    <th>Marks</th>
+    <th>Marks</th>
+    <th>Marks</th>
+    <th>Marks</th>
+    <th>Marks</th>
+    <th>Marks</th>
+    <th>Marks</th>
+    <th>Marks</th>
+    <th>Marks</th>
+    <th>Marks</th>
+    <th>Marks</th>
+    <th>Marks</th>
+    <th>Marks</th>
+    <th>Marks</th>
+    <th>Marks</th>
+    <th>Marks</th>
+</tr>
+<tr>
+    <td>Deeptesh Rout</td>
+    <td>01</td>
+    <td>50</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    <td>60</td>
+    <td>01</td>
+    <td>50</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    
+</tr>
+<tr>
+    <td>Aditya Gopal Nayak</td>
+    <td>02</td>
+    <td>55</td>
+    <td>65</td>
+    <td>75</td>
+    <td>85</td>
+    <td>95</td>
+    <td>55</td>
+    <td>65</td>
+    <td>75</td>
+    <td>85</td>
+    <td>95</td>
+    <td>01</td>
+    <td>50</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    
+</tr>
+<tr>
+    <td>Ayushman Behera</td>
+    <td>03</td>
+    <td>72</td>
+    <td>82</td>
+    <td>72</td>
+    <td>82</td>
+    <td>62</td>
+    <td>52</td>
+    <td>92</td>
+    <td>62</td>
+    <td>72</td>
+    <td>92</td>
+    <td>01</td>
+    <td>50</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    
+</tr>
+
+
+<tr>
+    <td>Kumar Amlan</td>
+    <td>04</td>
+    <td>72</td>
+    <td>82</td>
+    <td>72</td>
+    <td>82</td>
+    <td>62</td>
+    <td>52</td>
+    <td>92</td>
+    <td>62</td>
+    <td>72</td>
+    <td>92</td>
+    <td>01</td>
+    <td>50</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    
+</tr>
+
+
+<tr>
+    <td>Rounak Majhi</td>
+    <td>03</td>
+    <td>72</td>
+    <td>82</td>
+    <td>72</td>
+    <td>82</td>
+    <td>62</td>
+    <td>52</td>
+    <td>92</td>
+    <td>62</td>
+    <td>72</td>
+    <td>92</td>
+    <td>01</td>
+    <td>50</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    
+</tr>
+
+<tr>
+    <td>Chimaya Rout</td>
+    <td>05</td>
+    <td>72</td>
+    <td>82</td>
+    <td>72</td>
+    <td>82</td>
+    <td>62</td>
+    <td>52</td>
+    <td>92</td>
+    <td>62</td>
+    <td>72</td>
+    <td>92</td>
+    <td>01</td>
+    <td>50</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    
+</tr>
+
+<tr>
+    <td>Debesh Nayak</td>
+    <td>06</td>
+    <td>72</td>
+    <td>82</td>
+    <td>72</td>
+    <td>82</td>
+    <td>62</td>
+    <td>52</td>
+    <td>92</td>
+    <td>62</td>
+    <td>72</td>
+    <td>92</td>
+    <td>01</td>
+    <td>50</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    
+</tr>
+
+<tr>
+    <td>Sanskar Padhi</td>
+    <td>07</td>
+    <td>72</td>
+    <td>82</td>
+    <td>72</td>
+    <td>82</td>
+    <td>62</td>
+    <td>52</td>
+    <td>92</td>
+    <td>62</td>
+    <td>72</td>
+    <td>92</td>
+    <td>01</td>
+    <td>50</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    
+</tr>
+
+<tr>
+    <td>Subhalaxmi Padhi</td>
+    <td>08</td>
+    <td>72</td>
+    <td>82</td>
+    <td>72</td>
+    <td>82</td>
+    <td>62</td>
+    <td>52</td>
+    <td>92</td>
+    <td>62</td>
+    <td>72</td>
+    <td>92</td>
+    <td>01</td>
+    <td>50</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    
+</tr>
+
+<tr>
+    <td>Jay Prakash</td>
+    <td>09</td>
+    <td>72</td>
+    <td>82</td>
+    <td>72</td>
+    <td>82</td>
+    <td>62</td>
+    <td>52</td>
+    <td>92</td>
+    <td>62</td>
+    <td>72</td>
+    <td>92</td>
+    <td>01</td>
+    <td>50</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    
+</tr>
+
+<tr>
+    <td>Arnab Jena</td>
+    <td>10</td>
+    <td>72</td>
+    <td>82</td>
+    <td>72</td>
+    <td>82</td>
+    <td>62</td>
+    <td>52</td>
+    <td>92</td>
+    <td>62</td>
+    <td>72</td>
+    <td>92</td>
+    <td>01</td>
+    <td>50</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    
+</tr>
+
+<tr>
+    <td>Pyush Panda</td>
+    <td>11</td>
+    <td>72</td>
+    <td>82</td>
+    <td>72</td>
+    <td>82</td>
+    <td>62</td>
+    <td>52</td>
+    <td>92</td>
+    <td>62</td>
+    <td>72</td>
+    <td>92</td>
+    <td>01</td>
+    <td>50</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    
+</tr>
+
+<tr>
+    <td>Satya Prakash</td>
+    <td>12</td>
+    <td>72</td>
+    <td>82</td>
+    <td>72</td>
+    <td>82</td>
+    <td>62</td>
+    <td>52</td>
+    <td>92</td>
+    <td>62</td>
+    <td>72</td>
+    <td>92</td>
+    <td>01</td>
+    <td>50</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    
+</tr>
+
+<tr>
+    <td>Sabyasachi Parida</td>
+    <td>13</td>
+    <td>72</td>
+    <td>82</td>
+    <td>72</td>
+    <td>82</td>
+    <td>62</td>
+    <td>52</td>
+    <td>92</td>
+    <td>62</td>
+    <td>72</td>
+    <td>92</td>
+    <td>01</td>
+    <td>50</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    
+</tr>
+
+<tr>
+    <td>Diptesh Nayak</td>
+    <td>14</td>
+    <td>72</td>
+    <td>82</td>
+    <td>72</td>
+    <td>82</td>
+    <td>62</td>
+    <td>52</td>
+    <td>92</td>
+    <td>62</td>
+    <td>72</td>
+    <td>92</td>
+    <td>01</td>
+    <td>50</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    <td>60</td>
+    <td>70</td>
+    <td>80</td>
+    <td>90</td>
+    
+</tr>
+
+
+</table>
+</div>
+</body>
+</html>

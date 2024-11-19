@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Box Example</title>
+  <style>
+    body {
+      background-color: rgb(100, 100, 100);
+    }
+
+    /* Container for the form */
+    .form-container {
+      width: 300px;
+      padding: 100px;
+      background-color: #f9f9f9;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 50px auto;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Form title */
+    .form-title {
+      font-size: 24px;
+      margin-bottom: 15px;
+      text-align: center;
+      color: #333;
+    }
+
+    /* Input fields */
+    .form-input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    /* Submit button */
+    .form-submit {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .form-submit:hover {
+      background-color: #45a049;
+    }
+
+    /* Styling for labels */
+    .form-label {
+      margin-bottom: 5px;
+      display: block;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2 class="form-title">Sign Up</h2>
+    <form>
+      <label class="form-label" for="name">Name</label>
+      <input class="form-input" type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label class="form-label" for="email">Email</label>
+      <input class="form-input" type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label class="form-label" for="password">Password</label>
+      <input class="form-input" type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <button class="form-submit" type="submit">Sign Up</button>
+    </form>
+  </div>
+</body>
+</html>

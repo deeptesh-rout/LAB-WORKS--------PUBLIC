@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.s * { 
+  display: block;
+  border: 3px solid green;
+  color: lightgrey;
+  padding: 6px;
+  margin: 18px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  $("h5").prev().css({"color": "blue", "border": "3px solid blue"});
+});
+</script>
+</head>
+<body class="s">
+  <div>div (parent)
+    <p>p</p>
+    <span>span</span>
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+    <h6>h7</h6>
+  </div>
+</body>
+</html>

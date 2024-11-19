@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("button").click(function() {
+        $("h1, h2, p").removeClass("green");
+      });
+    });
+  </script>
+  <style>
+    .green {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="green">First Green Heading</h1>
+  <h2 class="green">Second Green Heading</h2>
+  <p class="green">This paragraph is green.</p>
+  <p>This paragraph has no color.</p>
+  <button>Delete the CSS class from the selected elements.</button>
+</body>
+</html>

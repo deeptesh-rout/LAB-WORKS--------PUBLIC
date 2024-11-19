@@ -1,0 +1,14 @@
+/* External styles for body, h5 heading, and paragraph */
+body {
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+.h5-heading {
+    color: purple;
+    font-size: 22px;
+}
+
+.paragraph {
+    color: #555; /* Dark gray color for paragraph */
+    font-size: 18px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <title>Adding HTML Elements</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                $("h3").append(", Ph.D.");
+            });
+
+            $("#b2").click(function(){
+                $("ul").append("<li>Ph.D.</li>");
+            });
+
+            $("#b3").click(function(){
+                $("h3").prepend("Dr. ");
+            });
+
+            $("#b4").click(function(){
+                $("ol").prepend("<li>Bhubaneswar</li>");
+            });
+
+            $("#b5").click(function(){
+                $("#image").before("<b>Siksha 'O' Anusandhan (Deemed to be University)</b>");
+            });
+
+            $("#b6").click(function(){
+                $("#image").after("Bhubaneswar, India");
+            });
+
+            $("#id7").click(function() {
+                var t1 = "<p>Faculty Of Engineering</p>"; 
+                var t2 = $("<p></p>").text("Faculty Of Medical Science, IMS."); 
+                var t3 = document.createElement("p");
+                t3.innerHTML = "Faculty Of Management Science, IBCS."; 
+                $("body").append(t1, t2, t3); 
+            });
+        });
+    </script>
+</head>
+<body>
+    <h3>Abhilash Pati </h3>
+    <h3>Mayur Ramgir </h3>
+
+    <ul id="unorder">
+        <li>B.Tech.</li>
+        <li>MBA</li>
+        <li>M.Tech.</li>
+    </ul>
+
+    <button id="b1">Append (Paragraph)</button>
+    <button id="b2">Append (List)</button>
+
+    <ol id="order">
+        <li>Cuttack</li>
+        <li>Berhampur</li>
+        <li>Rourkela</li>
+    </ol>
+
+    <button id="b3">Prepend (Paragraph)</button>
+    <button id="b4">Prepend (List)</button>
+    <br><br>
+    
+    <img src="download.jpeg" alt="jQuery" id="image" height="70px" width="70px">
+
+    <br><br>
+
+    <button id="b5">Add text before the image </button>
+    <button id="b6">Add text after the image </button>
+    <button id="id7">Append text</button>
+</body>
+</html>

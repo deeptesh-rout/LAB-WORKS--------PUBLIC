@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animation in jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        $("#start").click(function(){
+            $(".box").animate({left: '150px'}, "slow")
+                .animate({height: '50px', opacity: '0.3'}, "slow")
+                .animate({width: '300px', opacity: '0.7'}, "fast")
+                .animate({left: '150px'}, "slow", function(){
+                    alert("Animation Completed");
+                });
+        });
+
+        $("#stop").click(function(){
+            $(".box").stop();
+        });
+
+        $("#toggle").click(function(){
+            $(".box").animate({
+width: 'toggle'
+});
+        });
+    });
+    </script>
+
+
+
+
+
+
+
+
+
+    <style>
+        .box {
+            background-color: red;
+            height: 100px;
+            width: 200px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    <button id="start">Start animation</button>
+    <button id="stop">Stop animation</button>
+    <button id="toggle">Toggle animation</button>
+    <div class="box">Animation Example</div>
+</body>
+</html>

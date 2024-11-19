@@ -1,0 +1,90 @@
+<html>
+<head>
+    <title>Navigation Bars in CSS</title>
+    <style>
+        
+        .vertical-nav {
+            list-style-type: none;
+            padding: 0;
+            width: 150px;
+            background-color: blue;
+            position: fixed; 
+            height: 100%; 
+            overflow: auto;
+        }
+        .vertical-nav li a {
+            display: block;
+            color: red;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .vertical-nav li a:hover {
+            background-color: dodgerblue;
+            color: green;
+        }
+
+        /* Style for Horizontal Navigation Bar */
+        .horizontal-nav {
+            list-style-type: none;
+            margin: 0 px;
+            padding: 0 px;
+            overflow: hidden;
+            background-color: brown;
+            text-align: center;
+        }
+        .horizontal-nav li { 
+	    margin-left: 100px;
+            float: left; }
+        .horizontal-nav li a {
+            display: inline-block;
+            color: orange;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .horizontal-nav li a:hover {
+            background-color: yellow;
+            color: green;
+        }
+
+        /* Content Area */
+        .content {
+            margin-left: 150px; /* Space for vertical bar */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <!-- Vertical Navigation Bar -->
+    <h2>Vertical 
+    <h2> Navigation
+    <h2> Bar</h2>
+    <ul class="vertical-nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#vision">Vision</a></li>
+        <li><a href="#careers">Careers</a></li>
+    </ul>
+</div>
+
+<div>
+    <!-- Horizontal Navigation Bar -->
+    <h2 style = "margin: -27px 0px 0px 350px;">Horizontal Navigation Bar</h2>
+    <ul class="horizontal-nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#vision">Vision</a></li>
+        <li><a href="#careers">Careers</a></li>
+    </ul>
+</div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h3>My Name is Deeptesh Rout </h3>
+        <p>I am from Bhadrak</p>
+        <p>I am currently continuing my B.Tech. at SOA University</p>
+    </div>
+
+</body>
+</html>

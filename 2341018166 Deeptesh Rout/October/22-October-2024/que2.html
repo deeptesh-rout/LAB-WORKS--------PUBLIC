@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title>jQuery Selectors Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#btn1").click(function() {
+                $("h1").hide();
+            });
+            $("#btn2").click(function() {
+                $("#id2").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <h1>Hello, I am First Heading</h1>
+
+    <button id="btn1">Click here to disappear h1</button>
+    <h2 id="id2">Hello, I am Second Heading</h2>
+
+    
+    <button id="btn2">Click here to disappear h2</button>
+
+</body>
+</html>

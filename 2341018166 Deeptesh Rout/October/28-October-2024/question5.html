@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>Effects in jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#b1').click(function() {
+                $("h1").hide(1000);
+            });
+            $('#b2').click(function() {
+                $("h1").show(2000);
+            });
+            $('#b3').click(function() {
+                $("h1").toggle(3000);
+            });
+            $('#b4').click(function() {
+                $("#a1").fadeIn(1000);
+            });
+            $('#b5').click(function() {
+                $("#a1").fadeOut(2000);
+            });
+            $('#b6').click(function() {
+                $("#a1").fadeToggle(3000);
+            });
+            $('#b7').click(function() {
+                $("#a2").slideUp();
+            });
+           $('#b8').click(function() {
+                $("#a2").slideDown();
+            });
+           $('#b9').click(function() {
+                $("#a2").slideToggle();
+            });
+
+
+
+
+        });
+    </script>
+</head>
+<body>
+    <h1>Hide, Show & Toggle</h1>
+    <button id="b1">Hide</button>
+    <button id="b2">Show</button>
+    <button id="b3">Toggle</button>
+
+<h2>Fading Example</h2>
+<div id="a1" style="height: 50px; width: 120px; background-color: orange;">Fading Box</div>
+<button id="b4">Fade In</button>
+    <button id="b5">Fade Out</button>
+    <button id="b6">Fade Toggle</button>
+
+<h3>Sliding Example</h2>
+<div id="a2" style="height: 50px; width: 120px; background-color: red;">Sliding Box</div>
+<button id="b7">Slide In</button>
+    <button id="b8">Slide Out</button>
+    <button id="b9">Slide Toggle</button>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Setting Attribute in jQuery</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#b1").click(function () {
+        $("h1,p").addClass("red");
+        $("div").addClass("size");
+      });
+
+      $("#b2").click(function () {
+        $("#d2").find("h1, h2, p").removeClass("red");
+      });
+
+      $("#b3").click(function () {
+        $("#d3").find("h1, h2, p").toggleClass("red");
+      });
+
+      $("#id4").click(function () { 
+        $("#p1").css("background-color", "red");
+        $("#p2").css("background-color", "blue");
+        $("#p3").css("background-color", "green");
+      });
+
+      $("#id5").click(function () {
+        alert("Background color = " + $("#p1").css("background-color"));
+        alert("Background color = " + $("#p2").css("background-color"));
+        alert("Background color = " + $("#p3").css("background-color"));
+      });
+    });
+  </script>
+
+  <style>
+    .size {
+      font-size: larger;
+    }
+
+    .red {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="d1">
+    <h1>Heading1 in Red</h1>
+    <h2>Heading2</h2>
+    <p>Paragraph1 with Red</p>
+    <p>Paragraph2 with Red</p>
+    <div>Hi, I am inside div element.</div>
+    <br>
+    <button id="b1">Add 'red' color and 'size' class</button>
+  </div>
+
+  <div id="d2">
+    <h1 class="red">Heading1 in Red</h1>
+    <h2 class="red">Heading2</h2>
+    <p class="red">Paragraph1 with Red</p>
+    <p class="red">Paragraph2 with Red</p>
+    <p>This paragraph has no initial color.</p>
+    <br>
+    <button id="b2">Remove 'red' class</button>
+  </div>
+
+  <div id="d3">
+    <h1>Heading1 in Red</h1>
+    <h2>Heading2</h2>
+    <p>Paragraph1 with Red</p>
+    <p>Paragraph2 with Red</p>
+    <br>
+    <button id="b3">Toggle 'red' class</button>
+  </div>
+
+  <h2>How to set a CSS property?</h2>
+  <p id="p1" style="background-color:dodgerblue">Paragraph 1 with dodgerblue background.</p>
+  <p id="p2" style="background-color:orange">Paragraph 2 with orange background</p>
+  <p id="p3" style="background-color:yellow">Paragraph 3 with yellow background.</p>
+  <p>Paragraph 4 with no background color</p>
+  <button id="id4">Change the background color.</button>
+  <button id="id5">Show background-color</button>
+</body>
+
+</html>
