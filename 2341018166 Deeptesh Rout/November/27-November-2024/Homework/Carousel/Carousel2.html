@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Carousel With Caption Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <style>
+    .carousel-inner img {
+      width: 100%;
+      height: 500px; 
+    }
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.5); 
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <h1 class="text-center">Carousel With Caption Example</h1>
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+      <li data-target="#demo" data-slide-to="3"></li>
+    </ul>
+
+    <!-- Slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="http://streaming.yayimages.com/images/photographer/moodboard/3c0b371597cfe079e59bfe7404d76def/tower-of-london.jpg" alt="London">
+        <div class="carousel-caption">
+          <h3>London</h3>
+          <p>London is quite expensive, but it is worth it!</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="http://streaming.yayimages.com/images/photographer/azurin/715b200ead63018b4b958cd155b491da/gedachtniskirche-berlin.jpg" alt="Berlin">
+        <div class="carousel-caption">
+          <h3>Berlin</h3>
+          <p>Berlin is one of the biggest tech hubs in the world.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="http://streaming.yayimages.com/images/photographer/gary-steele/6780f08c0b79fba8728ef7f1a22b24ee/zurich.jpg" alt="Zurich">
+        <div class="carousel-caption">
+          <h3>Zurich</h3>
+          <p>Zurich is the center of banking and finance.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="http://streaming.yayimages.com/images/photographer/yellowj/afa1f74a23d0e2be642d1923cfd318dc/venice.jpg" alt="Venice">
+        <div class="carousel-caption">
+          <h3>Venice</h3>
+          <p>Few cities can claim to match Venice in beauty.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+</body>
+</html>
