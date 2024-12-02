@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbnail to Circular Image</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.image-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: border-radius 0.3s ease;
+}
+
+
+.thumbnail {
+    border-radius: 0%;
+}
+
+.toggle-input {
+    display: none;
+}
+
+.toggle-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.toggle-button:hover {
+    background-color: #45a049;
+}
+
+.toggle-input:checked ~ .image-grid .image-item img {
+    border-radius: 50%;
+}
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Checkbox that triggers the style change -->
+        <input type="checkbox" id="toggle" class="toggle-input">
+        <label for="toggle" class="toggle-button">Change to Circular</label>
+
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxljCiU3pRUXpw-39aklTNk7BDV3G9Dn7ocw&s" alt="Image 1" class="thumbnail">
+            </div>
+            <div class="image-item">
+                <img src="https://th.bing.com/th/id/OIG3.80EN2JPNx7kp5VqoB5kz" alt="Image 2" class="thumbnail">
+            </div>
+            <div class="image-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThn2O4f85iRUGth0pwLOtyRf-g24gOMKcPbQ&s" alt="Image 3" class="thumbnail">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
