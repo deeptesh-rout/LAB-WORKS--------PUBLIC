@@ -1,0 +1,55 @@
+
+<html>
+<head>
+<title> Bootstrap Media Objects </title>
+<meta charset = "UTF-8">
+<meta name="viewport" Content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+   $("body").mouseenter(function(){
+      $("div").fadeOut(5000);
+});
+});
+</script>
+<body style="text-align:center;">
+<h1 style="text-align:center">ALERT BUTTONS</h1>
+<div class="container">
+<div class="alert alert-success alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert"> &times; </button>
+    <strong>Success!</strong> To visit SOA University  
+</div>
+<div class="alert alert-info alert-dismissible">
+    <button type="button" class="close" data-dismiss="alert"> &times; </button>
+    <strong>Info!</strong> To visit SOA University        
+</div>
+<div class="alert alert-warning">
+    <button type="button" class="close" data-dismiss="alert"> &times; </button>
+    <strong>Warning!</strong> To visit SOA University        
+ </div>
+        <div class="alert alert-danger">
+	<button type="button" class="close" data-dismiss="alert"> &times; </button>
+        <strong>Danger!</strong> To visit SOA University        
+</div>
+        <div class="alert alert-primary">
+	<button type="button" class="close" data-dismiss="alert"> &times; </button>
+        <strong>Primary!</strong> To visit SOA University         
+</div>
+        <div class="alert alert-secondary">
+	<button type="button" class="close" data-dismiss="alert"> &times; </button>
+        <strong>Secondary!</strong> To visit SOA University        
+</div>
+       <div class="alert alert-dark">
+	<button type="button" class="close" data-dismiss="alert"> &times; </button>
+       <strong>Dark!</strong> To visit SOA University         
+</div>
+       <div class="alert alert-light">
+	<button type="button" class="close" data-dismiss="alert"> &times; </button>
+       <strong>Light!</strong> To visit SOA University         
+</div>
+</div>
+</body>
+</html>

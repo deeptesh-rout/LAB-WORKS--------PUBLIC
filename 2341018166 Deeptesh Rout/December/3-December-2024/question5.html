@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested Dropdown Menu</title>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+    .dropdown-submenu {
+      position: relative;
+    }
+
+    .dropdown-submenu>.dropdown-menu {
+      top: 50px;
+     
+      margin-top: -5px;
+      margin-left: 1px;
+      border-radius: 0.25rem;
+    }
+
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-submenu:hover>.dropdown-menu {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container mt-4">
+    <h1 class="display-5" style="text-align: center;">Nested Dropdown Menu</h1>
+    <h6 style="text-align: center;">Explore Categories with subcategories using a dropdown menu</h6>
+    <br>
+    <div style="text-align: center;">
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Category 1
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Subcategory 1.1</a>
+          <a class="dropdown-item" href="#">Subcategory 1.2</a>
+          <div class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">Subcategory 1.3</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Option 1.3.1</a>
+              <a class="dropdown-item" href="#">Option 1.3.2</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-group ml-2">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Category 2
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Subcategory 2.1</a>
+          <a class="dropdown-item" href="#">Subcategory 2.2</a>
+
+          <div class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">Subcategory 2.3</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Option 2.3.1</a>
+              <a class="dropdown-item" href="#">Option 2.3.2</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-group ml-2">
+        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Category 3
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Subcategory 3.1</a>
+          <a class="dropdown-item" href="#">Subcategory 3.2</a>
+          <div class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">Subcategory 3.3</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Option 3.3.1</a>
+              <a class="dropdown-item" href="#">Option 3.3.2</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-group ml-2">
+        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Category 4
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Subcategory 4.1</a>
+          <a class="dropdown-item" href="#">Subcategory 4.2</a>
+
+          <div class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">Subcategory 4.3</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Option 4.3.1</a>
+              <a class="dropdown-item" href="#">Option 4.3.2</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
