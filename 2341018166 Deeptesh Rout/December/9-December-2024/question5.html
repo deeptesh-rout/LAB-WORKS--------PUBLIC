@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>School Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .card-alumni {
+            border:1px solid #ddd;
+            border-radius:10px;
+            box-shadow:0 4px 8px rgba(0,0,0,.1);
+            transition:transform .3s;
+        }
+        .card-alumni:hover {
+            transform:scale(1.05);
+        }
+        .card-img-top {
+            border-top-left-radius:10px;
+            border-top-right-radius:10px;
+            height:200px;
+            object-fit:cover;
+        }
+        .card-title {
+            color:#007bff;
+            font-weight:bold;
+        }
+        .modal-header {
+            background-color:#f8f9fa;
+            border-bottom:2px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand text-primary" href="#">School Management System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Admission</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="achievementsDropdown" data-bs-toggle="dropdown">Achievements</a>
+                        <ul class="dropdown-menu" aria-labelledby="achievementsDropdown">
+                            <li><a class="dropdown-item" href="#">Awards</a></li>
+                            <li><a class="dropdown-item" href="#gallery">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#alumniModal">Alumni</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="alumniModal" tabindex="-1" aria-labelledby="alumniModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="alumniModalLabel">Our Distinguished Alumni</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-3">
+                        <div class="col-md-4"><div class="card card-alumni"><img src="https://media.istockphoto.com/id/1413922045/vector/programming-at-home.jpg?s=612x612&w=0&k=20&c=_5UhZu0-etj-lWZorNUAkF_PEqXfHpuf44dCeWeCOvc=" class="card-img-top" alt="Alumni 1"><div class="card-body"><h5 class="card-title">Jane Smith</h5><p class="card-text">Software engineer at a top tech firm, multiple innovation awards.</p></div></div></div>
+                        <div class="col-md-4"><div class="card card-alumni"><img src="https://img.freepik.com/premium-vector/software-developer-vector-illustration-communication-technology-cyber-security_1249867-5477.jpg?semt=ais_hybrid" class="card-img-top" alt="Alumni 2"><div class="card-body"><h5 class="card-title">Michael Johnson</h5><p class="card-text">Renowned scientist, groundbreaking research in renewable energy.</p></div></div></div>
+                        <div class="col-md-4"><div class="card card-alumni"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkvnaVcenwHhYSv6Uh2zJZJzvflJdwF-Yxrg&s" class="card-img-top" alt="Alumni 3"><div class="card-body"><h5 class="card-title">Emily Davis</h5><p class="card-text">Celebrated author and philanthropist, supporting education worldwide.</p></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

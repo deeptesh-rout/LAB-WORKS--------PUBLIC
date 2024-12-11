@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .table-striped tbody tr:nth-of-type(odd) { background-color: #f9f9f9; }
+        .table-striped tbody tr:nth-of-type(even) { background-color: #e9ecef; }
+        .btn-edit { background-color: #ffc107; color: #fff; }
+        .btn-edit:hover { background-color: #e0a800; }
+        .btn-delete { background-color: #dc3545; color: #fff; }
+        .btn-delete:hover { background-color: #c82333; }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center text-primary">Student Information</h2>
+        <table class="table table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Semester</th>
+                    <th>Registration Number</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sanket Sidhivinayak</td>
+                    <td>19</td>
+                    <td>3</td>
+                    <td>9465</td>
+                    <td>
+                        <button class="btn btn-edit btn-sm">Edit</button>
+                        <button class="btn btn-delete btn-sm">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Deeptesh Rout</td>
+                    <td>20</td>
+                    <td>3</td>
+                    <td>8166</td>
+                    <td>
+                        <button class="btn btn-edit btn-sm">Edit</button>
+                        <button class="btn btn-delete btn-sm">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Aayush Kumar Singh</td>
+                    <td>21</td>
+                    <td>3</td>
+                    <td>9469</td>
+                    <td>
+                        <button class="btn btn-edit btn-sm">Edit</button>
+                        <button class="btn btn-delete btn-sm">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Shrijan</td>
+                    <td>19</td>
+                    <td>3</td>
+                    <td>9454</td>
+                    <td>
+                        <button class="btn btn-edit btn-sm">Edit</button>
+                        <button class="btn btn-delete btn-sm">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // Delete action
+            $(document).on('click', '.btn-delete', function () {
+                if (confirm('Are you sure you want to delete this student?')) {
+                    $(this).closest('tr').remove();
+                }
+            });
+
+            // Edit action
+            $(document).on('click', '.btn-edit', function () {
+                alert('You have selected to edit this student.');
+            });
+        });
+    </script>
+</body>
+</html>

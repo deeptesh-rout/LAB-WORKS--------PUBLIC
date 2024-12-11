@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .jumbotron {
+            background-color: #f8f9fa;
+        }
+        .tutorial-content {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">HTML Tutorial</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#tutorial">Tutorial</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Welcome to HTML Tutorial</h1>
+        <p class="lead">Learn HTML with easy-to-understand examples and interactive lessons.</p>
+    </div>
+</div>
+
+
+<div class="container tutorial-content">
+    <!-- Nav Tabs -->
+    <ul class="nav nav-tabs" id="tutorialTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="htmlBasics-tab" data-toggle="tab" href="#htmlBasics" role="tab" aria-controls="htmlBasics" aria-selected="true">Overview</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="htmlElements-tab" data-toggle="tab" href="#htmlElements" role="tab" aria-controls="htmlElements" aria-selected="false">Examples</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="htmlForms-tab" data-toggle="tab" href="#htmlForms" role="tab" aria-controls="htmlForms" aria-selected="false">Practice</a>
+        </li>
+    </ul>
+
+    
+    <div class="tab-content" id="tutorialTabContent">
+        
+        <div class="tab-pane fade show active" id="htmlBasics" role="tabpanel" aria-labelledby="htmlBasics-tab">
+            <h4>Overview</h4>
+            <p>HTML stands for HyperText Markup Language. It is the standard language used to create web pages.</p>
+            <p>It describes the structure of a webpage and is often used in conjunction with CSS and JavaScript for styling and interactivity.</p>
+        </div>
+
+        <div class="tab-pane fade" id="htmlElements" role="tabpanel" aria-labelledby="htmlElements-tab">
+            <h4>Examples</h4>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;My first Page&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello, World&lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+
+        <div class="tab-pane fade" id="htmlForms" role="tabpanel" aria-labelledby="htmlForms-tab">
+            <h4>Practice</h4>
+            <p>HTML forms allow users to submit data to the server. A form is defined using the <code>&lt;form&gt;</code> tag, and inside it, you can use elements like <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;button&gt;</code>.</p>
+        </div>
+    </div>
+    <nav>
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+            </li>
+            <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
