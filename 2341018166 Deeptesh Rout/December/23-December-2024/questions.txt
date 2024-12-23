@@ -1,0 +1,17 @@
+Here’s the list with numbering:  
+
+1. Write a program to traverse and print all elements of an array.  
+2. Write a program to calculate the sum of all elements in an array.  
+3. Write a program to find the largest and smallest elements in an array.  
+4. Write a program to reverse the elements of an array.  
+5. Write a program to search for a specific element in an array using linear search.  
+6. Write a program to sort an array in ascending order using bubble sort.  
+7. Write a program to find and print duplicate elements in an array.  
+8. Write a program to count the frequency of each element in an array.  
+9. Write a program to merge two arrays into a single array.  
+10. Write a program to find the second largest element in an array.  
+11. Write a program to remove duplicate elements from an array.  
+12. Write a program to rotate an array to the left by a given number of positions.  
+13. Write a program to find a sub-array whose sum is equal to a given number.  
+14. Write a program to perform matrix multiplication using two-dimensional arrays.  
+15. Write a program to find the intersection of two arrays (common elements).  
