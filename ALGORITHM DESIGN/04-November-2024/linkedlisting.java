@@ -1,4 +1,4 @@
-
+/* */
 import java.util.Scanner;
 
 
@@ -64,17 +64,6 @@ public class linkedlisting {
         newNode.next = start;
         return newNode;
     }
-
-
-
-    
-    public class linkedlisting {
-        public static void main(String[] args) {
-            
-        }
-    }
-
-
 
 
 }
